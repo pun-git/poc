@@ -1,6 +1,5 @@
 language: java
-script: mvn clean install
-mvn heroku:deploy -Dheroku.appName=myapp
+script: mvn clean heroku:deploy -Dheroku.appName=tinyurl -DHEROKU_API_KEY="e586a349-f7f7-4efb-a85b-36243ecdd82e"
 deploy:
   provider: heroku
   api_key:
