@@ -1,5 +1,6 @@
 language: java
 script: mvn clean install
+mvn heroku:deploy -Dheroku.appName=myapp
 deploy:
   provider: heroku
   api_key:
