@@ -37,11 +37,11 @@
         			<appName>tinyurl</appName>
         			<includeTarget>false</includeTarget>
           			<includes>
-              				<include>${basedir}/${full-artifact-name}</include>
+              				<include>./target/project-tinyurl-0.0.1-SNAPSHOT.jar</include>
           			</includes>
         			<jdkVersion>1.8</jdkVersion>
   					<processTypes>
-     					<web>java $JAVA_OPTS -jar ${full-artifact-name}</web>
+     					<web>java $JAVA_OPTS -jar ./target/project-tinyurl-0.0.1-SNAPSHOT.jar</web>
   					</processTypes>
 				</configuration>
       		</plugin>
