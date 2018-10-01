@@ -8,7 +8,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>tinyurl</name>
-	<description>Spring Boot Demo Project</description>
+	<description>Tiny Url using spring boot application</description>
 	<parent>
 	   <groupId>org.springframework.boot</groupId>
 	   <artifactId>spring-boot-starter-parent</artifactId>
