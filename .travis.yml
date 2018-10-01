@@ -1,2 +1,6 @@
 language: java
 script: mvn clean install
+deploy:
+  provider: heroku
+  api_key:
+    secure: "e586a349-f7f7-4efb-a85b-36243ecdd82e"
