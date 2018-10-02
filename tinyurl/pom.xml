@@ -3,24 +3,29 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.project.poc</groupId>
+	<groupId>com.poc.project</groupId>
 	<artifactId>project-tinyurl</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>tinyurl</name>
 	<description>Tiny Url using spring boot application</description>
 	<parent>
-	   <groupId>org.springframework.boot</groupId>
-	   <artifactId>spring-boot-starter-parent</artifactId>
-	   <version>1.5.2.RELEASE</version>
+	   <groupId>com.poc</groupId>
+	   <artifactId>project</artifactId>
+	   <version>0.0.1-SNAPSHOT</version>
+	   <relativePath>../pom.xml</relativePath>
 	</parent>
-	<properties>
-	   <java.version>1.8</java.version>
-	</properties>
+	
 	<dependencies>
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-parent</artifactId>
+			<version>${spring.boot.version}</version>
+			<type>pom</type>
+	    </dependency>
 	    <dependency>
 		    <groupId>org.springframework.boot</groupId>
 		    <artifactId>spring-boot-starter-web</artifactId>
+			<version>${spring.boot.version}</version>
 	    </dependency>
 	</dependencies> 
 	<build>
@@ -37,11 +42,11 @@
         			<appName>project-application</appName>
         			<includeTarget>false</includeTarget>
           			<includes>
-              				<include>./tinyurl/target/project-tinyurl-0.0.1-SNAPSHOT.jar</include>
+              				<include>./target/project-tinyurl-0.0.1-SNAPSHOT.jar</include>
           			</includes>
         			<jdkVersion>1.8</jdkVersion>
   					<processTypes>
-     					<web>java $JAVA_OPTS -jar ./tinyurl/target/project-tinyurl-0.0.1-SNAPSHOT.jar</web>
+     					<web>java $JAVA_OPTS -jar ./target/project-tinyurl-0.0.1-SNAPSHOT.jar</web>
   					</processTypes>
 				</configuration>
       		</plugin>
