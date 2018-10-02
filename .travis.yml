@@ -1,2 +1,4 @@
 language: java
-script: mvn -X clean heroku:deploy -Dheroku.appName=project-application -DHEROKU_API_KEY=6a3ad8ac-84f1-4ee5-9c5d-64bd181b8144
+env:
+  - HEROKU_API_KEY=6a3ad8ac-84f1-4ee5-9c5d-64bd181b8144
+mvn -X clean heroku:deploy -Dheroku.appName=project-application
