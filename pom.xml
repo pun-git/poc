@@ -3,10 +3,18 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.poc</groupId>
-  <artifactId>com.poc.project</artifactId>
+  <artifactId>project</artifactId>
   <packaging>pom</packaging>
   <version>0.0.1-SNAPSHOT</version>
   <name>project</name>
+  
+  <properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<junit.version>3.8.1</junit.version>
+		<spring.boot.version>1.5.2.RELEASE</spring.boot.version>
+		<java.version>1.8</java.version>
+  </properties>
+  
   <modules>
     <module>tinyurl</module>
   </modules>  
