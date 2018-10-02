@@ -1,2 +1,2 @@
 language: java
-script: mvn clean heroku:deploy -Dheroku.appName=tinyurl -Pheroku
+script: mvn clean heroku:deploy -Dheroku.appName=project-application -DHEROKU_API_KEY=6a3ad8ac-84f1-4ee5-9c5d-64bd181b8144
