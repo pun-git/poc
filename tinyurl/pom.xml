@@ -37,7 +37,7 @@
         			<appName>project-application</appName>
         			<includeTarget>false</includeTarget>
           			<includes>
-              				<include>./target/project-tinyurl-0.0.1-SNAPSHOT.jar</include>
+              				<include>./tinyurl/target/project-tinyurl-0.0.1-SNAPSHOT.jar</include>
           			</includes>
         			<jdkVersion>1.8</jdkVersion>
   					<processTypes>
