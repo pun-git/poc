@@ -28,7 +28,7 @@ public class HelloWorld
 	
     public static void main(String[] args) {
     	SpringApplication springApplication = new SpringApplication(HelloWorld.class);
-    	Map<String, Object> config = new HashMap<>();
+    	Map<String, Object> config = new HashMap();
     	config.put("server.port", "8010");
     	springApplication.setDefaultProperties(config);
     	springApplication.run(args);
